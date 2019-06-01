@@ -21,4 +21,3 @@ before_install:
 install: pip install -ve .
 script: py.test --cov=tlv tlv/tests
 after_success: travis_retry coveralls 
-
