@@ -5,8 +5,7 @@ def test_loads():
     dumped_tlv = b'P13006762427CIF012111001209483PHN01109121902288' \
         b'TKT003SFTTOK003000TKR00202'
 
-    tlv = TLV()
-    tags = tlv.loads(dumped_tlv)
+    tags = TLV.loads(dumped_tlv)
 
     assert 'P13' in tags.fields
     assert 'CIF' in tags.fields
